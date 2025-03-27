@@ -1,0 +1,148 @@
+.chivo-dark {
+    font-family: "Chivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .chivo-lite {
+    font-family: "Chivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+
+html {
+    font-family: 'Chivo', sans-serif;
+    background-color: #03254e;
+  }
+
+  
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: white;
+  }
+
+h2 {
+    text-align: center;
+    color: white;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+.header, .break, .footer {
+    /*background-color: #2D6B4C;*/
+    background-color: #0c251d;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    color: white;
+}
+
+.navbar {
+    position: fixed; /* This makes the navbar persistent */
+    top: 0;          /* Position at the top of viewport */
+    width: 100%;     /* Full width */
+    background-color: #0c251d;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;   /* Ensures navbar appears above other content */
+    transition: 0.3s; /* Smooth transition for any effects */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 60px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+}
+
+.navbar-menu a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar-menu a:hover {
+    color: white;
+}
+
+body {
+    padding-top: 60px; /* Adjust this value based on your navbar height */
+  }
+  
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Increased from 5px for better separation */
+    max-width: 1200px; /* Container max width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+  }
+.subsection {
+    flex: 1 1 200px; /* Grow, shrink, basis */
+    min-height: 200px;
+    min-width: 180px; /* Larger than 100px for better content fit */
+    
+    /* Box styling */
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    
+    /* Content styling */
+    display: flex;
+    flex-direction: column;
+  }
+
+/* Mobile menu button */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .navbar-menu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: #333;
+        padding: 20px;
+        display: none;
+    }
+    
+    .navbar-menu.active {
+        display: flex;
+    }
+    
+    .navbar-menu li {
+        margin: 10px 0;
+    }
+}
