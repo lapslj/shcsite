@@ -60,10 +60,11 @@ h3 {
 
 .break, .footer {
     /*background-color: #2D6B4C;*/
+    scroll-margin-top: 60px;
     background-color: #0c251d;
     width: 100%;
     margin: 0;
-    padding: 10px 0;
+    padding: 5px;
     color: white;
 }
 
@@ -163,6 +164,7 @@ body {
   }
 
 .section {
+  scroll-margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -170,6 +172,15 @@ body {
     margin: 0 auto; /* Center the container */
     padding: 20px;
   }
+
+  .section2 {
+    scroll-margin-top: 60px;
+    gap: 15px;
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    background-color: #73b7ea;
+  }
+
 .subsection {
     flex: 1 1 200px; /* Grow, shrink, basis */
     min-height: 100px;
