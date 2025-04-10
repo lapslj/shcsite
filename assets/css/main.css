@@ -326,4 +326,8 @@ body {
     font-size: 18px;
 }
 
+#header-img {
+  object-fit: contain;
+}
+
 }
