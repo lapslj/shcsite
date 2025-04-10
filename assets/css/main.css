@@ -16,6 +16,8 @@
   font-weight: 300;
   font-style: normal;
   font-size: 12px;
+  margin-bottom: 5px;
+  display: block;
 }
 
 .chivo-dark {
@@ -97,6 +99,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: auto;
     top: 0;       
     right: 0;
     left: 0;   
@@ -105,7 +108,7 @@ h3 {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     z-index: 1000;  
     transition: 0.2s;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .nav-left {
@@ -121,6 +124,10 @@ h3 {
   padding: 5px 5px;
   height: 50px;
   transition: 0.3s;
+}
+
+#header-img {
+  height: 175px;
 }
 
 .nav-logo:hover {
@@ -179,7 +186,8 @@ body {
   
 
   .header {
-    display: flex;  
+    display: flex; 
+    /* flex-direction: column;  */
     justify-content: space-between;
     max-width: 1000px;
     padding: 30px;
@@ -265,26 +273,61 @@ body {
 }
 
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-    
-    .navbar-menu {
-        position: absolute;
-        top: 60px;
-        left: 0;
-        right: 0;
+    .header {
         flex-direction: column;
-        background-color: #333;
-        padding: 20px;
-        display: none;
     }
+
+    .menu-toggle {
+      display: block;
+  }
     
-    .navbar-menu.active {
-        display: flex;
-    }
-    
-    .navbar-menu li {
-        margin: 10px 0;
-    }
+  .navbar-menu {
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #333;
+    padding: 20px 30px;
+    display: none; 
+    z-index: 999;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  top: 0;       
+  right: 0;
+  left: 0;   
+  width: 100%;  
+  background-color: #0c251d;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;  
+  transition: 0.2s;
+  padding-bottom: 20px;
+  /* overflow: hidden; */
+}
+
+.navbar-menu.active {
+    display: flex !important; 
+}
+
+  .navbar-menu li {
+    margin: 10px 0;
+    text-align: center; 
+}
+
+#header-img {
+  height:fit-content;
+}
+
+.navbar-menu a {
+    display: block; 
+    padding: 8px 0; 
+    font-size: 18px;
+}
+
 }

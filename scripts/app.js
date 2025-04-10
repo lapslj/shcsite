@@ -1,9 +1,18 @@
 const menuToggle = document.getElementById('menu-toggle');
 const navbarMenu = document.getElementById('navbar-menu');
+const menuLinks = document.querySelectorAll('.navbar-menu a');
 
 menuToggle.addEventListener('click', () => {
     navbarMenu.classList.toggle('active');
 });
+
+    // Close menu when any menu link is clicked
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navbarMenu.classList.remove('active');
+        });
+    });
+
 
 // Optional: Hide navbar on scroll down, show on scroll up
 /* 
