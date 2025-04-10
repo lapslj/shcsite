@@ -320,10 +320,6 @@ body {
     text-align: center; 
 }
 
-#header-img {
-  height:fit-content;
-}
-
 .navbar-menu a {
     display: block; 
     padding: 8px 0; 
