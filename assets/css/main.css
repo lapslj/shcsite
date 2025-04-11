@@ -34,6 +34,15 @@
     font-style: normal;
   }
 
+  .chivo-white {
+    font-family: "Chivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: white;
+    text-align: left;
+  }
+
 /*Image gif classes*/
 
 .static:hover {
@@ -232,19 +241,23 @@ body {
   }
 
   .section2 {
+    display: none;
     scroll-margin-top: 60px;
-    gap: 15px;
+    width: 100%;
     margin: 0 auto; /* Center the container */
     padding: 20px;
-    background-color: #73b7ea;
+    background-color: #040d13;
+    font-family: "Chivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+
   }
 
 .subsection {
     flex: 1 1 200px; /* Grow, shrink, basis */
     min-height: 100px;
-    min-width: 180px; /* Larger than 100px for better content fit */
-    /* animation: fadeIn 0.6s ease forwards; 
-    opacity: 0; */
+    min-width: 180px;
     
     /* Box styling */
     background-color: #a7d3ce;
@@ -256,6 +269,45 @@ body {
     display: flex;
     flex-direction: column;
   }
+
+  .textbox {
+    flex: 1 1 200px; /* Grow, shrink, basis */
+    min-height: 100px;
+    min-width: 180px;
+
+    background-color: #c9b6eb;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+
+    display: block;
+    flex-direction: column;
+  }
+
+  .textbox2 {
+    flex: 1 1 200px; /* Grow, shrink, basis */
+    min-height: 100px;
+    min-width: 180px;
+
+    background-color: #efc7ea;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+
+    display: block;
+    flex-direction: column;
+  }
+
+  .textbox ul {
+    padding-inline-start: 0;
+    list-style-position: inside;
+    margin: 3px;
+  }
+
+  .textbox li {
+   padding: 2px;
+  }
+
 
   @keyframes fadeIn {
     from { opacity: 0; }
