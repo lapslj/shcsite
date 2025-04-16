@@ -210,7 +210,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    max-width: 1000px; /* Container max width */
+    max-width: 900px; /* Container max width */
     margin: 0 auto; /* Center the container */
     padding: 20px;
   }
@@ -240,6 +240,11 @@ body {
     }
   }
 
+#headshot {
+  height: 400px;
+  border-radius: 8px;
+}
+
   .section2 {
     display: none;
     scroll-margin-top: 60px;
@@ -251,6 +256,9 @@ body {
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
+    display: flex;
+    flex-direction: row;
+
 
   }
 
