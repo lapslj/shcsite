@@ -331,7 +331,7 @@ body {
 }
 
   .section2 {
-    display: none;
+    display: flex;
     scroll-margin-top: 60px;
     width: 100%;
     margin: 0 auto; /* Center the container */
@@ -342,7 +342,7 @@ body {
     font-weight: 200;
     font-style: normal;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
 
   }
@@ -420,6 +420,10 @@ body {
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
+    }
+
+    .section2 {
+      flex-direction: column;
     }
 
     .menu-toggle {
