@@ -43,6 +43,71 @@
     text-align: left;
   }
 
+.about-us {
+  font-family: "Chivo", sans-serif;
+  font-size: 18px;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+  text-align: left;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+.about-us a{
+  color:#e7c787;
+}
+
+.about-us b{
+  color:#e7c787;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #05140f;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  /*Font stuff */
+  font-family: "Chivo", sans-serif;
+  font-size: 20px;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+  text-align: left;
+  outline: none;
+
+  margin: 5px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #6a8d76;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.coll-cont {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #05140f;
+  /* font stuff */
+  font-family: "Chivo", sans-serif;
+  font-size: 16px;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  line-height: 1.3;
+  font-style: normal;
+  color: white;
+  text-align: left;
+  outline: none;
+}
+
+
 /*Image gif classes*/
 
 .static:hover {
@@ -101,8 +166,23 @@ h3 {
   width: 100%;
   margin: 0;
   padding: 5px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Chivo", sans-serif;
+  font-size: 16px;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  line-height: 1.3;
+  font-style: normal;
   color: white;
+  text-align: left;
+  outline: none;
 }
+
+.footer a{
+  color: #ffc752;
+}
+
 .navbar {
     position: fixed;
     display: flex;
@@ -137,6 +217,11 @@ h3 {
 
 #header-img {
   height: 175px;
+}
+
+#getlink {
+  color: #ffc752;
+  font-weight: 400;
 }
 
 .nav-logo:hover {
@@ -257,7 +342,7 @@ body {
     font-weight: 200;
     font-style: normal;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
 
   }

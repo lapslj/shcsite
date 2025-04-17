@@ -1,6 +1,7 @@
 const menuToggle = document.getElementById('menu-toggle');
 const navbarMenu = document.getElementById('navbar-menu');
 const menuLinks = document.querySelectorAll('.navbar-menu a');
+const coll = document.getElementsByClassName("collapsible");
 
 menuToggle.addEventListener('click', () => {
     navbarMenu.classList.toggle('active');
@@ -13,21 +14,14 @@ menuToggle.addEventListener('click', () => {
         });
     });
 
-
-// Optional: Hide navbar on scroll down, show on scroll up
-/* 
-let lastScrollTop = 0;
-window.addEventListener('scroll', () => {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    const navbar = document.querySelector('.navbar');
-    
-    if (scrollTop > lastScrollTop) {
-        // Scroll down
-        navbar.style.top = '-60px'; // Hide navbar (height of navbar)
-    } else {
-        // Scroll up
-        navbar.style.top = '0';
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
     }
-    lastScrollTop = scrollTop;
-});
-*/
